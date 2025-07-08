@@ -1,5 +1,6 @@
 package com.app.nearme.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import java.util.List;
 
@@ -8,6 +9,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Schema(description = "Response payload for place search")
 public class ResponseDTO {
     private Long id;
     private String title;

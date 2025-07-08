@@ -1,4 +1,4 @@
-# NearMe – Proximity-Based Search Backend
+git# NearMe – Proximity-Based Search Backend
 **NearMe** is a Spring Boot backend application that enables proximity-based location search, similar to Google Maps. It accepts user location and query (title and tags), and returns the closest relevant places, sorted by distance using the Haversine formula.
 
 ---
@@ -127,6 +127,20 @@ Or import into IntelliJ/Eclipse and run `NearMeApplication.java`.
 URL: `http://localhost:8080/h2-console`  
 JDBC URL: `jdbc:h2:mem:nearme-db`  
 Username: `sa`, Password: (leave blank)
+
+---
+
+## 🌐 API & Tool URLs
+
+| Description                        | URL                                           |
+|------------------------------------|-----------------------------------------------|
+| ✅ Base URL                        | http://localhost:8090                         |
+| 🚀 Search Places API (POST)        | http://localhost:8090/api/places/search       |
+| 🔍 Natural Language Search (POST)* | http://localhost:8090/api/places/nl-search    |
+| 🧪 H2 Database Console             | http://localhost:8090/h2-console              |
+| 📘 Swagger UI                      | http://localhost:8090/swagger-ui.html         |
+| 🧾 OpenAPI JSON (Swagger Spec)     | http://localhost:8090/v3/api-docs             |
+| 📫 Postman Import (use above URL) | (Import Swagger JSON in Postman)              |
 
 ---
 

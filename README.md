@@ -1,4 +1,4 @@
-NearMe – Proximity-Based Search Backend
+# NearMe – Proximity-Based Search Backend
 **NearMe** is a Spring Boot backend application that enables proximity-based location search, similar to Google Maps. It accepts user location and query (title and tags), and returns the closest relevant places, sorted by distance using the Haversine formula.
 
 ---

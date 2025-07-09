@@ -1,4 +1,4 @@
-git# NearMe – Proximity-Based Search Backend
+NearMe – Proximity-Based Search Backend
 **NearMe** is a Spring Boot backend application that enables proximity-based location search, similar to Google Maps. It accepts user location and query (title and tags), and returns the closest relevant places, sorted by distance using the Haversine formula.
 
 ---
@@ -177,6 +177,33 @@ Make sure you have the following installed:
 
 ---
 
+#### 🛠️ 2. Create a Dockerfile
+
+```Dockerfile
+FROM eclipse-temurin:17-jdk-alpine
+WORKDIR /app
+COPY target/NearMe-0.0.1-SNAPSHOT.jar app.jar
+EXPOSE 8090
+ENTRYPOINT ["java", "-jar", "app.jar"]
+```
+
+---
+
+#### 🏗️ 3. Build the Docker Image
+
+```bash
+  docker build -t nearme-app .
+```
+
+---
+
+#### 🚀 4. Run the Docker Container
+
+```bash
+  docker run -p 8090:8090 nearme-app
+```
+
+---
 ### 💻 Run Using Your IDE (IntelliJ / Eclipse / VS Code)
 
 Follow these steps to run the project from your favorite Java IDE:
